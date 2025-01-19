@@ -12,8 +12,8 @@ A simple command-line tool to interact with OpenAI's ChatGPT from any terminal. 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/chatgpt-cli.git
-   cd chatgpt-cli
+   git clone https://github.com/SAADAT-Abu/ask-GPT.git
+   cd ask-GPT
    ```
 
 2. Install requirements
@@ -34,7 +34,7 @@ A simple command-line tool to interact with OpenAI's ChatGPT from any terminal. 
 4. Usage 
 
 ```bash
-   python3 chatgpt_cli.py "Your question here"
+   python3 ask-GPT.py "Your question here"
 ```
 
 5. Optional Enhancements
@@ -43,7 +43,7 @@ A simple command-line tool to interact with OpenAI's ChatGPT from any terminal. 
 
 ```bash
 
-alias ask-GPTt="python3 /path/to/chatgpt_cli.py"
+alias ask-GPT="python3 /path/to/ask-GPT.py"
 
 chatgpt "Explain quantum entanglement."
 
