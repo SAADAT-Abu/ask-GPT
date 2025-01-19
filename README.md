@@ -1,10 +1,11 @@
 # Ask-GPT
 
-A simple command-line tool to interact with OpenAI's ChatGPT from any terminal.
+A simple command-line tool to interact with OpenAI's ChatGPT from any terminal. Now enhanced with the ability to analyze the last bash command and debug potential issues.
 
 ## Features
 - Query ChatGPT directly from the terminal.
 - Uses OpenAI's GPT-4 (or GPT-3.5 if specified).
+- Analyze the last executed bash command for errors or debugging.
 - Simple setup and usage.
 
 ## Setup
@@ -42,7 +43,7 @@ A simple command-line tool to interact with OpenAI's ChatGPT from any terminal.
 
 ```bash
 
-alias chatgpt="python3 /path/to/chatgpt_cli.py"
+alias ask-GPTt="python3 /path/to/chatgpt_cli.py"
 
 chatgpt "Explain quantum entanglement."
 
