@@ -1,4 +1,4 @@
 {
     "api_key": "YOUR_OPENAI_API_KEY",
-    "huggingface_model": "gpt2"
+    "huggingface_model": "google/flan-t5-small"
 }
