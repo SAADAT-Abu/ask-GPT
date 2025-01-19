@@ -1,4 +1,4 @@
-# ChatGPT CLI
+# Ask-GPT
 
 A simple command-line tool to interact with OpenAI's ChatGPT from any terminal.
 
