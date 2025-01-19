@@ -1,6 +1,6 @@
 # Ask-GPT
 
-A versatile command-line tool that allows you to interact with AI models, analyze terminal commands, and debug errors. It uses Hugging Face models and provides a seamless, user-friendly experience for both querying and troubleshooting.
+A versatile command-line tool that allows you to interact with AI models, analyze terminal commands, and debug errors. It can use OpenAI API or Hugging Face models to provides a seamless, user-friendly experience for both querying and troubleshooting.
 
 ## Features
 
