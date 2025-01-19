@@ -1,12 +1,14 @@
 # Ask-GPT
 
-A simple command-line tool to interact with OpenAI's ChatGPT from any terminal. Now enhanced with the ability to analyze the last bash command and debug potential issues.
+is a versatile command-line tool that allows you to interact with AI models, analyze terminal commands, and debug errors. It uses Hugging Face models and provides a seamless, user-friendly experience for both querying and troubleshooting.
 
 ## Features
-- Query ChatGPT directly from the terminal.
-- Uses OpenAI's GPT-4 (or GPT-3.5 if specified).
-- Analyze the last executed bash command for errors or debugging.
-- Simple setup and usage.
+
+1. **Ask Questions**: Use Hugging Face models to answer questions and perform natural language tasks.
+2. **Analyze Terminal Commands**: Automatically fetch and debug the last executed terminal command.
+3. **Preferred Model Configuration**: Saves your preferred Hugging Face model in a shared configuration file (`config.json`) for future use.
+4. **Error Handling**: Provides meaningful responses to terminal issues and other queries.
+5. **Customizable**: Easily switch models and configurations as per your needs.
 
 ## Setup
 
@@ -20,36 +22,70 @@ A simple command-line tool to interact with OpenAI's ChatGPT from any terminal. 
    ```bash
    pip install -r requirements.txt
    ```
-3. Add your OpenAI API key:
+   
+3. Configure the Tool
 
    Create a config.json file in the project root.
    Add your API key in the following format:
 
-```
+  ```bash
   {
-    "api_key": "YOUR_API_KEY"
+    "api_key": "YOUR_OPENAI_API_KEY",
+    "huggingface_model": "gpt2"
   }
-```
+  ```
+api_key: Your OpenAI API key (if needed for other tools in the package).
+huggingface_model: Your preferred Hugging Face model (e.g., gpt2, bloom, flan-t5).
 
-4. Usage 
+## 4. Usage 
 
-```bash
+   ```bash
    python3 ask-GPT.py "Your question here"
-```
 
-5. Optional Enhancements
+  ```
+
+Example output:
+
+  ```bash
+   Analyzing the last terminal command...
+   Last command: ls -l /nonexistentpath
+   Response: The command tries to list files in a non-existent directory. Check the path for typos or ensure the directory exists.
+  ```
+Ask a Question
+
+  ```bash
+   python3 ask-AI.py "What is the capital of France?"
+  ```
+Help
+
+  ```bash
+   python3 ask-AI.py help
+  ```
+
+## 5. Optional Enhancements
 
    Add an Alias: Add this to your shell configuration file (e.g., ~/.bashrc or ~/.zshrc):
 
-```bash
+  ```bash
 
-alias ask-GPT="python3 /path/to/ask-GPT.py"
+   alias ask-GPT="python3 /path/to/ask-GPT.py"
+   alias ask-AI="python3 /path/to/ask-AI.py"
 
-chatgpt "Explain quantum entanglement."
+   source ~/.bashrc  # or source ~/.zshrc
 
-```
+  ```
 
-Contributing:
+## Supported Hugging Face Models
+The tool supports various Hugging Face models. Specify your preferred model in config.json. Examples include:
+
+1. **gpt2:** A lightweight and fast model for text generation.
+2. **bloom:** A multilingual large language model.
+3. **flan-t5:** Google's instruction-tuned language model.
+To change the model, update the huggingface_model key in config.json or delete the file to reset.
+
+
+
+## Contributing:
 
 Feel free to fork and submit pull requests for enhancements!
 
