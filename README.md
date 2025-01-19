@@ -31,7 +31,7 @@ A versatile command-line tool that allows you to interact with AI models, analyz
   ```bash
   {
     "api_key": "YOUR_OPENAI_API_KEY",
-    "huggingface_model": "gpt2"
+    "huggingface_model": "google/flan-t5-small"
   }
   ```
 api_key: Your OpenAI API key (if needed for other tools in the package).
